@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: darkcyan;
+    width:100%;
+    height:auto;
+    
+}
+
+.container{
+    background: darkcyan;
+    width:40%;
+    margin: 3rem auto  auto;
+    border-radius: 10px;
+   
+    
+}
+
+.container form{
+    width:80%;
+    margin: 0 auto;
+    padding:20px 40px;
+    background: transparent;
+}
+
+fieldset{
+    padding: 0px 40px;
+    border:1px solid rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+fieldset legend{
+    width: fit-content;
+    margin: 0 auto;
+    display: block;
+    color:#333;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 1.3rem;
+    background-color: #E5E5E5;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 8px rgba(0,0,0,0.2);
+    
+   
+}
+
+.container form .form-group{
+    width:100%;
+    padding:10px 0;
+    border:none;
+    outline: none;
+    position: relative;
+    margin-bottom: 10px;
+
+}
+
+
+
+
+.container form .form-group label{
+    position: absolute;
+    top:0;
+    left:0;
+    color: rgba(0,0,0,0.5);
+    font-family: sans-serif;
+    padding: 10px 0px;
+    font-weight: lighter;
+    font-size: 1.0rem;
+    transition: .5s top;
+    pointer-events: none;
+    font-style: normal;
+    
+}
+.container form .form-group input:focus ~ label,
+.container form .form-group input:valid ~ label
+{
+    top:-17px;
+    font-size: 0.8rem;
+    color:darkcyan;
+    transition: .5s top;
+}
+
+
+
+.container form .form-group input{
+    width:100%;
+    padding: 5px 0px;
+    border:none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    outline:none;
+    background: transparent;
+    font-weight: 100;
+    font-size: 1.0rem;
+    font-family: sans-serif;
+    color:#333;
+    letter-spacing: 1px;
+    transition: background-color .5s ease-in;
+    
+}
+
+.container form .form-group input[type="text"]:focus,
+.container form .form-group input[type="password"]:focus{
+    background-color: #f2f2f2;
+}
+
+
+.container form .form-group input[type="submit"]{
+    background-color: darkcyan;
+    color:white;
+    width:fit-content;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    font-size: 1.0rem;
+    font-family: sans-serif;
+    border-radius: 5px;
+    padding:10px 20px;
+    transition: background-color .2s ease-in-out;
+    
+    
+  
+
+}
+
+.container form .form-group input[type="submit"]:hover{
+    background-color:  #333;
+    transition: background-color .2s ease-in-out;
+}
+
+.container form .form-group h5{
+    color:#888;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    border:none;
+    background:transparent;
+    padding: 10px;
+    text-align: left;
+    
+}
+
+.container form .form-group h5 a{
+    color:darkcyan;
+    margin-left:10px;
+    text-decoration: none;
+}
+.container form .form-group h5 a:hover{
+    color:#333;
+}
+
+
+
+
+
+@media(max-width:768px){
+
+    .container{
+        background: darkcyan;
+        width:90%;
+        margin: 5rem auto;
+        border-radius: 10px;
+     
+    }
+    
+
+    .container form{
+        width:100%;
+        margin: 0 auto;
+        padding:20px;
+        background: transparent;
+    }
+
+    .container form .form-group label{
+        position: absolute;
+        top:0;
+        left:0;
+        color: rgba(0,0,0,0.7);
+        font-family: sans-serif;
+        padding: 10px 0px;
+        font-weight: lighter;
+        font-size: 1.0rem;
+        transition: .5s top;
+        pointer-events: none;
+        font-style: normal;
+        
+    }
+
+    .container form .form-group input[type="submit"]{
+        background: darkcyan;
+        color:white;
+        width:100%;
+        margin:10px auto;
+        border:none;
+        outline:none;
+        cursor: pointer;
+        font-size: 1.2rem;
+        font-family: sans-serif;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        padding:10px 20px;
+
+    }
+
+    .container form .form-group h5{
+        color:#777;
+        font-family: sans-serif;
+        font-weight: 100;
+        font-size: .8rem;
+        border:none;
+        background:transparent;
+        padding: 10px;
+        text-align: center;
+        
+    }
+    
+    .container form .form-group h5 a{
+        color:darkcyan;
+        margin-left:10px;
+        text-decoration: none;
+    }
+}
+
